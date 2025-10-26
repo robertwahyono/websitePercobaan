@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FutureTech - Company Profile</title>
+
+  <!-- Link ke CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js untuk dashboard -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <h1>FutureTech</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#team">Team</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="lang-mode">
+      <button id="darkToggle">🌙</button>
+      <button id="langToggle">🇮🇩</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to <span>FutureTech</span></h2>
+      <p>Innovating technology for a brighter tomorrow.</p>
+      <button class="cta-btn">Learn More</button>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about">
+    <h2 class="section-title">About Us</h2>
+    <p>
+      FutureTech is a global leader in cutting-edge solutions for software,
+      automation, and AI. Established in 2015, we have been helping companies
+      transform their digital future with innovation and passion.
+    </p>
+    <div class="about-stats">
+      <div><h3>10+</h3><p>Years Experience</p></div>
+      <div><h3>200+</h3><p>Projects Completed</p></div>
+      <div><h3>50+</h3><p>Clients Worldwide</p></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Software Development</h3>
+        <p>We build reliable, scalable, and user-friendly applications for enterprises and startups.</p>
+      </div>
+      <div class="service-card">
+        <h3>Automation & AI</h3>
+        <p>Integrating automation and artificial intelligence to improve efficiency and reduce costs.</p>
+      </div>
+      <div class="service-card">
+        <h3>Consulting</h3>
+        <p>Our experts provide strategic consulting for digital transformation and innovation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section id="team">
+    <h2 class="section-title">Our Team</h2>
+    <div class="team">
+      <div class="member">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" alt="CEO">
+        <h3>Robert Wahyono</h3>
+        <p>CEO & Founder</p>
+      </div>
+      <div class="member">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80" alt="CTO">
+        <h3>Jessica Tan</h3>
+        <p>CTO</p>
+      </div>
+      <div class="member">
+        <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=80" alt="Designer">
+        <h3>Michael Liu</h3>
+        <p>Lead Designer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DASHBOARD ===== -->
+  <section id="dashboard" class="dashboard">
+    <h2 class="section-title">Company Dashboard</h2>
+    <p class="desc">Company performance overview for 2025 (sample data)</p>
+
+    <div class="charts-container">
+      <div class="chart-box">
+        <canvas id="barChart"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="pieChart"></canvas>
+      </div>
+      <div class="chart-box">
+        <canvas id="lineChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 FutureTech. All rights reserved.</p>
+  </footer>
+
+  <!-- Link ke JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
